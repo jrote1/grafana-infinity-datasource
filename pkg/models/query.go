@@ -254,9 +254,6 @@ func ApplyDefaultsToQuery(ctx context.Context, query Query) Query {
 			if query.PageMaxPages <= 0 {
 				query.PageMaxPages = 1
 			}
-			if query.PageMaxPages >= 5 {
-				query.PageMaxPages = 5
-			}
 			if query.PageParamSizeFieldName == "" {
 				query.PageParamSizeFieldName = "limit"
 			}
